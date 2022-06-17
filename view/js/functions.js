@@ -1,4 +1,4 @@
-function echo()
+function echo(texto)
 {
-    alert("bro this is nice");
+    alert(texto); 
 }

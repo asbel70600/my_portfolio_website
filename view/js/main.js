@@ -1,16 +1,14 @@
-var ship = Math.random()*7;
-ship = parseInt(ship);
-var isDead = false;
+$(document).ready(function()
+{
+    var altura = $("#my_menu").offset().top;
 
-
-do{
-    var guess = prompt("Ok, selecciona una celda de 1 a 10:");
-    
-   if(guess == ship || guess == ship+1 || guess == ship+2)
-   {
-            alert("You silly motherfuker...");
-            isDead = true;
-    }
-
-}while(!isDead)
-echo();
+    $(window).on('scroll',function()
+    {
+        if($(window).scrollTop() > altura+10)
+        {
+            $("#my_menu").addClass("floating-menu");
+        }else{
+            $("#my_menu").removeClass("floating-menu");
+        }
+    }) 
+})

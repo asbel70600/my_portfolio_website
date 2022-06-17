@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "menu-font";
+    src: url(AnekMalayalam-Regular.ttf);
+}
+@font-face {
+    font-family: "baskerville-fanci";
+    src: url(Baskerville-fanci.ttf);
+}
+@font-face {
+    font-family: "baskerville-old-face";
+    src: url(baskerville-old-face.ttf);
+}
+:root{
+    --table-img-height: calc(((100vw/1470)*1110));
+}
+.clearfix{
+    clear: both;
+}
+header{
+    font-family: "baskerville-fanci";
+    font-size: x-large;
+    height: 1.5cm;
+    margin-top: 1cm;
+    margin-left:1cm;
+}
+body{
+    margin:0px;
+    background-color:rgb(255, 244, 235);
+}
+
+.blak-n-white{
+    color: white;
+    background-color: black;
+    margin:0px;
+    padding-top: 0.1cm;
+    padding-bottom: 0.1cm;
+    min-width: 100%;
+    float: left;
+    
+}
+ul{
+    list-style: none;
+    margin: 0;
+}
+.horizontal-list-element{
+    font-family: "menu-font";
+    float: left;
+    margin-left: 0.1cm;
+    margin-right: 0.1cm;
+}
+.uncolored-link{
+    color: white;
+    text-decoration: none;
+}
+.superpos{
+    background-color: rgba(255,255, 255, .5);
+    margin-top: calc(var(--table-img-height) - var(--table-img-height)/3);
+    height: calc(var(--table-img-height)/3);
+    position:absolute;
+    width: 100%;
+}
+.big-text{
+    color: rgb(135, 43, 69);
+    font-size: calc((var(--table-img-height)/3)/4);
+    font-family:"baskerville-fanci";
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-top:calc((var(--table-img-height)/3)/5);
+}
+.middle-text{
+    color: white;
+    font-size: large;
+    font-family:"baskerville-fanci";
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+.small-text{
+    font-size: large;
+    font-family:"baskerville-old-face";
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    margin-top:calc((var(--table-img-height)/3)/7);
+}
+.mosaic-img{
+    width: 100%;
+    margin:1px;
+    padding:0 0 0 0;
+}
+.mosaic-div{
+    float: left;
+    width: 24.7%;
+    margin:1px;
+    margin-bottom: 0.5cm;
+    margin-top: 0.5cm;
+    padding:0 0 0 0;
+}
+.buddha{
+    background-color:rgb(135, 43, 69);
+    color: white;
+    height: calc(var(--table-img-height)/3.5);
+    padding-top:calc((var(--table-img-height)/3)/4); ;
+    width: 100%;
+}

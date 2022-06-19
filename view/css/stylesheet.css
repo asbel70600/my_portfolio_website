@@ -1,28 +1,8 @@
-@font-face {
-    font-family: "menu-font";
-    src: url(AnekMalayalam-Regular.ttf);
-}
-@font-face {
-    font-family: "baskerville-fanci";
-    src: url(Baskerville-fanci.ttf);
-}
-@font-face {
-    font-family: "baskerville-old-face";
-    src: url(baskerville-old-face.ttf);
-}
-:root{
-    --table-img-height: calc(((100vw/1470)*1110));
-}
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
 }
-.clearfix{
-    clear: both;
-}
+
 header{
     font-family: "baskerville-fanci";
     font-size: x-large;
@@ -31,10 +11,16 @@ header{
     margin-left:1cm;
 }
 body{
+    display: flex;
+    flex-direction: column;
     margin:0px;
     background-color:rgb(255, 244, 235);
 }
-
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 .blak-n-white{
     margin:0px;
     padding-top: 0.1cm;
@@ -44,15 +30,13 @@ body{
     
 }
 .menu {
+    display: flex;
     background-color: black;
     list-style: none;
-    margin: 0;
     width: 100%;
-    float: left;
 }
-.menu li{
-    float: left;
-    margin:0.2cm;
+.menu_li{
+    margin: 1%;
 }
 .floating-menu{
     position: fixed;
@@ -62,12 +46,22 @@ body{
 .uncolored-link{
     color: white;
     text-decoration: none;
+    margin: 1%;
+}
+.fanci-table-container{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
 }
 .superpos{
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    flex-direction: column;
     background-color: rgba(255,255, 255, .5);
-    margin-top: calc(var(--table-img-height) - var(--table-img-height)/3);
     height: calc(var(--table-img-height)/3);
-    position:absolute;
     width: 100%;
 }
 .big-text{
@@ -75,8 +69,6 @@ body{
     font-size: calc((var(--table-img-height)/3)/4);
     font-family:"baskerville-fanci";
     margin: auto;
-    width: 80%;
-    text-align: center;
     margin-top:calc((var(--table-img-height)/3)/5);
 }
 .middle-text{
@@ -84,8 +76,6 @@ body{
     font-size: large;
     font-family:"baskerville-fanci";
     margin: auto;
-    width: 80%;
-    text-align: center;
 }
 .small-text{
     font-size: large;
@@ -95,23 +85,26 @@ body{
     text-align: center;
     margin-top:calc((var(--table-img-height)/3)/7);
 }
+.mosaic-container{
+    display: flex;
+    flex-direction: row;
+}
+.vcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 24.7%;
+    margin: 2px;
+}
 .mosaic-img{
     width: 100%;
-    margin:1px;
-    padding:0 0 0 0;
-}
-.mosaic-div{
-    float: left;
-    width: 24.7%;
-    margin:1px;
-    margin-bottom: 0.5cm;
-    margin-top: 0.5cm;
-    padding:0 0 0 0;
+    margin: 2px;
 }
 .buddha{
+    display: flex;
+    flex-direction: column;
     background-color:rgb(135, 43, 69);
     color: white;
-    height: calc(var(--table-img-height)/3.5);
-    padding-top:calc((var(--table-img-height)/3)/4); ;
+    min-height: 25vh;
+    height: auto;
     width: 100%;
 }
